@@ -69,7 +69,7 @@ const Hero = () => {
             <div className='order-1 sm:order-2'>
               <div className='relative z-10'>
                 <img src={data.img} alt=""
-                className='w-[200px] h-[200px] sm:w-[350px] sm:h-[350px] sm:scale-125 object-contain mx-auto' />
+                className='w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto' />
               </div>
             </div>
           </div>
