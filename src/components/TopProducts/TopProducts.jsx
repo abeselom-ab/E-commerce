@@ -9,19 +9,19 @@ const ProductsData = [
     {
      id: 1,
     img:Img1,
-    tittle:'Baggy Jeans',
+    tittle:'Old School T-Shirt',
     description:'Hey, there do not forget to purchase our top products'
     },
     {
         id: 2,
        img:Img2,
-       tittle:'Baggy Jeans',
+       tittle:'Oversized T-Shirt',
        description:'Hey, there do not forget to purchase our top products'
        },
        {
         id: 3,
        img:Img3,
-       tittle:'Baggy Jeans',
+       tittle:'Oversized T-Shirt',
        description:'Hey, there do not forget to purchase our top products'
        }
 ]
@@ -38,7 +38,7 @@ const TopProducts = () => {
               </p> 
             </div>
             {/*body section*/}
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center space-y-6 '>
                 {ProductsData.map((data)=>(
                         <div 
                           data-aos='zoom-in'

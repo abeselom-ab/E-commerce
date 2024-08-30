@@ -7,6 +7,8 @@ import 'aos/dist/aos.css';
 import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
+import Testimonial from './components/Testimonial/Testimonial';
+import Footer from './components/Footer/Footer';
 function App() {
 
   React.useEffect(() => {
@@ -20,13 +22,16 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className='bg-white dark:bg-gray-900  dark:text-white duration-300 '>
       <Navbar />
       <Hero />
       <Products />
       <TopProducts />
       <Banner />
       <Subscribe />
+      <Products />
+      <Testimonial />
+      <Footer />
     </div>
   );
 };

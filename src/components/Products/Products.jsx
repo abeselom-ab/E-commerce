@@ -11,7 +11,7 @@ const Products = () => {
         {
             id: 1,
             img:Img1,
-            tittle:'Baggy Jeans',
+            tittle:'Trapstar Jacket New',
             rating:5.0,
             color:'white',
             aosDelay:"0"
@@ -19,7 +19,7 @@ const Products = () => {
         {
             id: 2,
             img:Img2,
-            tittle:'Baggy Jeans',
+            tittle:'Air Jordan 1',
             rating:4.5,
             color:'red',
             aosDelay:"0"
@@ -27,7 +27,7 @@ const Products = () => {
         {
             id: 3,
             img:Img3,
-            tittle:'Baggy Jeans',
+            tittle:'Oversized T-Shirt',
             rating:5.0,
             color:'brown',
             aosDelay:"0"
@@ -35,7 +35,7 @@ const Products = () => {
         {
             id: 4,
             img:Img4,
-            tittle:'Baggy Jeans',
+            tittle:'Baggy Outfit',
             rating:5.0,
             color:'pink',
             aosDelay:"0"
@@ -43,7 +43,7 @@ const Products = () => {
         {
             id: 5,
             img:Img5,
-            tittle:'Baggy Jeans',
+            tittle:'Full Package',
             rating:5.0,
             color:'pink',
             aosDelay:"0"
@@ -62,7 +62,7 @@ const Products = () => {
             </div>
             {/*body section*/}
             <div>
-                <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5'>
+                <div className='grid max-sm:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5'>
                     {/*card section*/}
                     {ProductsData.map((data)=>(
                         <div 
@@ -86,6 +86,15 @@ const Products = () => {
                         </div>
                     ))}
                 </div>
+                 {/*view all products */}
+                 <div className='flex justify-center '>
+                    <button 
+                      className='bg-primary cursor-pointer hover:scale-105 text-white py-1 px-5 duration-300 
+                      rounded-md mt-1 '
+                    >
+                      View All Products
+                    </button>
+                    </div>
             </div>
         </div>
     </div>
