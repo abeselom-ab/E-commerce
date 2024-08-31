@@ -25,7 +25,7 @@ const ProductsData = [
        description:'Hey, there do not forget to purchase our top products'
        }
 ]
-const TopProducts = () => {
+const TopProducts = ({handleOrderPopup}) => {
   return (
     <div>
         <div className='container'>
@@ -69,6 +69,7 @@ const TopProducts = () => {
                               <button 
                                 className='bg-primary hover:scale-105 text-white py-1 px-4 duration-300 
                                 rounded-full mt-4 group-hover:bg-white group-hover:text-primary '
+                                onClick={handleOrderPopup}
                               >
                                 Order Now
                               </button>

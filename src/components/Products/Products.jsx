@@ -6,7 +6,7 @@ import Img4 from '../../assets/image/products/baggy-outfit-1.jpg';
 import Img5 from '../../assets/image/products/baggy-outfit-2.jpg';
 
 import { FaStar } from 'react-icons/fa6';
-const Products = () => {
+const Products = ({handleOrderPopup}) => {
     const ProductsData = [
         {
             id: 1,
@@ -62,7 +62,7 @@ const Products = () => {
             </div>
             {/*body section*/}
             <div>
-                <div className='grid max-sm:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5'>
+                <div className='grid max-sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 place-items-center'>
                     {/*card section*/}
                     {ProductsData.map((data)=>(
                         <div 
@@ -87,14 +87,15 @@ const Products = () => {
                     ))}
                 </div>
                  {/*view all products */}
-                 <div className='flex justify-center '>
+                 <div data-aos='fade-up' className='flex justify-center '>
                     <button 
                       className='bg-primary cursor-pointer hover:scale-105 text-white py-1 px-5 duration-300 
                       rounded-md mt-1 '
+                      onClick={handleOrderPopup}
                     >
                       View All Products
                     </button>
-                    </div>
+                 </div>
             </div>
         </div>
     </div>

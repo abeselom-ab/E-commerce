@@ -23,7 +23,7 @@ const ImageList=[
  description:'Hey there, you want to shop for holidays just use our materials! It is incredible! Hey guys how is your shoping going? If you really want to buy an outstanding brand cloths Tomi Fashion is always ready. We offer quality brand Turkish cloths with affordable price! '
 }
 ];
-const Hero = () => {
+const Hero = ({handleOrderPopup}) => {
   var settings= {
     dots:false,
     arrows:false,
@@ -72,6 +72,7 @@ const Hero = () => {
               >
                 <button 
                 className='bg-gradient-to-r from-primary to-secondary rounded-full hover:scale-105 duration-200 text-white py-2 px-4'
+                onClick={handleOrderPopup}
                 >Order Now</button>
               </div>
             </div>
