@@ -63,15 +63,10 @@ export default function CardWithImageExample() {
     <div className="flex items-center min-h-screen bg-gray-100"> 
       <div className="mx-auto">  
         {/* header section */}
-          <div class="text-center block mb-4 mx-auto border-b border-slate-300 pb-2 max-w-[360px] rounded-lg shadow-sm">
-              <a
-                target="_blank"
-                href="https://www.material-tailwind.com/docs/html/card"
-                class="block w-full px-4 py-2 text-slate-700 hover:text-teal-500 transition-all"
-              >
-                More components on <b>Material Tailwind</b>
-              </a>
-        </div>
+        <header className="text-center mb-8">
+        <h1 className="text-4xl font-bold">Mens Fashion Collection</h1>
+        <p className="text-gray-700">Discover the latest gadgets and tech</p>
+      </header>
         <div className="grid max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mt-8 mb-10">  
           {ProductsData.map((data) => (
             <div
