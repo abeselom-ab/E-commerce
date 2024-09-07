@@ -10,7 +10,7 @@ const Home = ({ handleOrderPopup }) => {
   return (
     <div>
       <Hero handleOrderPopup={handleOrderPopup} />
-      <Products handleOrderPopup={handleOrderPopup} />
+      <Products />
       <TopProducts handleOrderPopup={handleOrderPopup} />
       <Banner />
       <Subscribe />

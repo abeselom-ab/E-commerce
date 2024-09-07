@@ -1,6 +1,6 @@
 import React from 'react'
 import { IoCloseCircleOutline } from 'react-icons/io5'
-const Popup = ({orderPopup, setOrderPoupup}) => {
+const Popup = ({orderPopup, setOrderPopup}) => {
   return (
   <>
     {orderPopup && (
@@ -15,7 +15,7 @@ const Popup = ({orderPopup, setOrderPoupup}) => {
                     <div>
                         <IoCloseCircleOutline 
                         className='text-2xl cursor-pointer'
-                        onClick={() => setOrderPoupup(false)}
+                        onClick={() => setOrderPopup(false)}
                         />
                     </div>
                  </div>

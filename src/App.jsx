@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import 'tw-elements';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AppRoutes from './routes/index.jsx';
