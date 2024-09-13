@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
+import LoginPage from '../pages/LoginPage'
 import TopRated from '../pages/TopRated';
 import KidsWear from '../pages/KidsWear';
 import MensWear from '../pages/MensWear';
@@ -14,6 +15,7 @@ const AppRoutes = ({ handleOrderPopup }) => {
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Routes>
         <Route path="/" element={<Home handleOrderPopup={handleOrderPopup} />} />
+        <Route path="/login" element={<LoginPage /> } />
         <Route path="/top-rated" element={<TopRated handleOrderPopup={handleOrderPopup} />} />
         <Route path="/kids-wear" element={<KidsWear handleOrderPopup={handleOrderPopup} />} />
         <Route path="/mens-wear" element={<MensWear handleOrderPopup={handleOrderPopup} />} />

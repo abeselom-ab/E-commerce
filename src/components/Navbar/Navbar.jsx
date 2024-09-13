@@ -104,7 +104,8 @@ const Navbar = ({handleOrderPopup}) => {
         </div>
       </div>
     {/*Lower Navbar */}
-      <div data-aos='zoom-in' className='flex justify-center'>
+      <div data-aos='zoom-in' className='flex justify-between items-center'>
+        <div>
         <ul className='sm:flex hidden items-center gap-4'>
           {Menu.map((data)=>(
               <li key={data.id} className=''>
@@ -143,8 +144,11 @@ const Navbar = ({handleOrderPopup}) => {
                 </ul>
               </div>
           </li>
-        </ul>
-
+        </ul>              
+        </div>
+        <div className='inline-block px-4 hover:text-primary duration-200  '>
+          <Link to='/login' >Login</Link>
+        </div>
       </div>
     </div>
   )
