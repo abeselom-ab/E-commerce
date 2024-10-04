@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
-import LoginPage from '../pages/LoginPage'
+import LoginPage from '../pages/LoginPage';
+import AddProduct from '../components/Products/AddProducts';
+import Register from '../pages/Register';
 import TopRated from '../pages/TopRated';
 import KidsWear from '../pages/KidsWear';
 import MensWear from '../pages/MensWear';
@@ -16,6 +18,8 @@ const AppRoutes = ({ handleOrderPopup }) => {
       <Routes>
         <Route path="/" element={<Home handleOrderPopup={handleOrderPopup} />} />
         <Route path="/login" element={<LoginPage /> } />
+        <Route path="/register" element={<Register /> } />
+        <Route path="/add-product" element={<AddProduct/> } />
         <Route path="/top-rated" element={<TopRated handleOrderPopup={handleOrderPopup} />} />
         <Route path="/kids-wear" element={<KidsWear handleOrderPopup={handleOrderPopup} />} />
         <Route path="/mens-wear" element={<MensWear handleOrderPopup={handleOrderPopup} />} />

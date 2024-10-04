@@ -1,7 +1,14 @@
-import axios from 'axios';
+import baseApi from './baseApi';
 
-const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/e-commerce', 
-});
-
-export default axiosInstance;
+export const addProductApi = async (formData) => {
+  try {
+    const response = await baseApi.post('/products/add', formData, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response ? error.response.data.message : error.message);
+  }
+};
