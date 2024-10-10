@@ -147,7 +147,7 @@ const Navbar = ({handleOrderPopup}) => {
         </ul>              
         </div>
         <div className='inline-block px-4 hover:text-primary duration-200  '>
-          <Link to='/login' >Login</Link>
+          <Link to='/signin' >Sign In</Link>
         </div>
       </div>
     </div>

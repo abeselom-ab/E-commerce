@@ -19,7 +19,7 @@ function AddProductForm() {
       [name]: value,
     });
   };
-
+       
   const handleImageChange = (e) => {
     setProduct({
       ...product,

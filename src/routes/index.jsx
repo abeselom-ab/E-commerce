@@ -17,7 +17,7 @@ const AppRoutes = ({ handleOrderPopup }) => {
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Routes>
         <Route path="/" element={<Home handleOrderPopup={handleOrderPopup} />} />
-        <Route path="/login" element={<LoginPage /> } />
+        <Route path="/signin" element={<LoginPage /> } />
         <Route path="/register" element={<Register /> } />
         <Route path="/add-product" element={<AddProduct/> } />
         <Route path="/top-rated" element={<TopRated handleOrderPopup={handleOrderPopup} />} />

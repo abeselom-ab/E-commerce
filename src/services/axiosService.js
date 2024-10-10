@@ -12,3 +12,25 @@ export const addProductApi = async (formData) => {
     throw new Error(error.response ? error.response.data.message : error.message);
   }
 };
+
+{/*add a user api */}
+
+export const addUserApi = async (formData) => {
+  try {
+    const response = await baseApi.post('/users/add', formData, {
+      headers: {
+        'Content-Type' : 'multipart/form-data',
+      },
+    });
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response ? error.response.data.message : error.message);
+  }
+}
+
+
+export default {
+  addProductApi,
+  addUserApi,
+};
+  
