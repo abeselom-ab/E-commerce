@@ -13,6 +13,14 @@ export const addProductApi = async (formData) => {
   }
 };
 
+export const getAllProductsApi = async () => {
+  try {
+    const response = await baseApi.get('/products/getAll');
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response ? error.response.data.message : error.message);
+  }
+}
 {/*add a user api */}
 
 export const addUserApi = async (formData) => {
@@ -28,9 +36,9 @@ export const addUserApi = async (formData) => {
   }
 }
 
-
 export default {
   addProductApi,
   addUserApi,
+  getAllProductsApi
 };
   

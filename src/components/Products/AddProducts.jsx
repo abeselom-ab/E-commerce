@@ -8,6 +8,7 @@ function AddProductForm() {
     productName: '',
     productImage: null,
     productType: '',
+    productPrice: '',
     productDescription: '',
     productRating: '',
   });
@@ -34,6 +35,7 @@ function AddProductForm() {
     const formData = new FormData();
     formData.append('productName', product.productName);
     formData.append('productType', product.productType);
+    formData.append('productPrice',product.productPrice);
     formData.append('productDescription', product.productDescription);
     formData.append('productRating', product.productRating);
     formData.append('productImage', product.productImage); // Append the image
@@ -68,6 +70,19 @@ function AddProductForm() {
             onChange={handleImageChange}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary-600 focus:border-primary-600"
             accept="image/*"
+            required
+          />
+        </div>
+  
+         {/* Product Price */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700">Product Price</label>
+          <input
+            type="number"
+            name="productPrice"
+            value={product.productPrice}
+            onChange={handleInputChange}
+            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary-600 focus:border-primary-600"
             required
           />
         </div>
@@ -113,7 +128,7 @@ function AddProductForm() {
             onChange={handleInputChange}
             className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary-600 focus:border-primary-600"
             min="1"
-            max="5"
+            max="5.5"
             step="0.1"
             required
           />
